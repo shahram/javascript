@@ -1,5 +1,8 @@
+var global = 'Hello, I am a global variable';
+
 (function () {
 
+    // The variables inside this closure are private!
     var myGrades = [93, 95, 88, 0, 55, 91];
 
     var average = function () {
@@ -18,5 +21,5 @@
 
     console.log(average());
     console.log(failing());
-
+    console.log(global);
 }())
