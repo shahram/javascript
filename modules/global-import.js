@@ -1,9 +1,16 @@
 var globalVariable = [1, 2, 3, 4];
 
 (function (globalVariable) {
+
+    // Keep this variables private inside this closure scope
+
     var privateFunction = function () {
         console.log('Shhhh, this is private!');
     }
+
+    // Expose the below methods via the globalVariable interface while
+    // hiding the implementation of the method within the 
+    // function() block
 
     globalVariable.each = function (collection, iterator) {
         if (Array.isArray(collection)) {
