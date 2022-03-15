@@ -36,7 +36,7 @@ var globalVariable = [1, 2, 3, 4];
 
     globalVariable.map = function (collection, iterator) {
         var mapped = [];
-        globalUtils.each(collection, function (value, key, collection) {
+        globalVariable.each(collection, function (value, key, collection) {
             mapped.push(iterator(value));
         });
         return mapped;
@@ -58,3 +58,5 @@ var globalVariable = [1, 2, 3, 4];
 }(globalVariable))
 
 // How to use?
+console.log(globalVariable.map);
+console.log([1, 2, 3].accumulator);
