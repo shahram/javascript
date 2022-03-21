@@ -1,0 +1,7 @@
+{
+  "sap.ux.applicationModeler.disableMigrationPrompt": true,
+  "ui5.plugin.codeGeneratorStrategy": "ES6",
+  "files.associations": {
+    "": ""
+  }
+}
